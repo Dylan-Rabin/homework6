@@ -34,7 +34,7 @@ document.querySelector("#skip").addEventListener("click", function() {
 		video.currentTime += 5;
 	}
 	console.log("Current location " + video.currentTime);
-	video.play()
+	video.play();
 });
 
 document.querySelector("#mute").addEventListener("click", function() {
@@ -55,10 +55,12 @@ document.querySelector("#volumeSlider").addEventListener("click", function() {
 });
 
 document.querySelector("#old").addEventListener("click", function() {
-	document.getElementById("old").style.filter = "grayscale(100%)";
+	video.classList.add("oldTime");
+	console.log("Grayscale")
 });
 
 document.querySelector("#original").addEventListener("click", function() {
-	document.getElementById("original").style.filter = "grayscale(100%)";
+	video.classList.remove("oldTime");
+	console.log("Normal Color");
 });
 
