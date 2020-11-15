@@ -56,11 +56,11 @@ document.querySelector("#volumeSlider").addEventListener("click", function() {
 
 document.querySelector("#old").addEventListener("click", function() {
 	let z = document.querySelector("body");
-	z.classList.add("oldTime");
+	z.classList.add("grayscale");
 });
 
 document.querySelector("#original").addEventListener("click", function() {
 	let y = document.querySelector("body");
-	y.classList.remove("oldTime");
+	y.classList.remove("grayscale");
 });
 
