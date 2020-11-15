@@ -55,12 +55,10 @@ document.querySelector("#volumeSlider").addEventListener("click", function() {
 });
 
 document.querySelector("#old").addEventListener("click", function() {
-	let z = document.querySelector("body");
-	z.classList.add("grayscale");
+	document.getElementById("old").style.filter = "grayscale(100%)";
 });
 
 document.querySelector("#original").addEventListener("click", function() {
-	let y = document.querySelector("body");
-	y.classList.remove("grayscale");
+	document.getElementById("original").style.filter = "grayscale(100%)";
 });
 
